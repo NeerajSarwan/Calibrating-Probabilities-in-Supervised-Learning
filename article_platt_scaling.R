@@ -113,7 +113,7 @@ fit.isoreg <- function(iso, x0)
 {
   o = iso$o
   if (is.null(o)) 
-    o = 1:length(x)
+    o = 1:length(iso$x)
   x = iso$x[o]
   y = iso$yf
   ind = cut(x0, breaks = x, labels = FALSE, include.lowest = TRUE)
